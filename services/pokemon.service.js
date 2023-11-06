@@ -9,12 +9,11 @@ class PokemonService {
       `${this.urlBase}/pokemon?limit=${quantity}&offset=${randomNumber}`
     );
     const resp = await response.json();
-
+    this.pokemons = [];
     for (const pokemon of resp.results) {
       let poke = await this.#getOnePokemon(pokemon.name);
       this.pokemons.push(poke);
     }
-
     return this.pokemons;
   }
 

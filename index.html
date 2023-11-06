@@ -10,17 +10,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/pokeballStyle.css" />
+    <link rel="stylesheet" href="css/pokemon-card.css">
   </head>
   <body>
-    
-    <div id="loadingContainer" class="wrapper">
-      <div class="pokeball"></div>
+    <div>
+      <button class="boton-generar" id="btnGenerar">Generar</button>
     </div>
+    <div class="main-container">
+      <div id="loadingContainer" class="wrapper">
+      </div>
 
-    <div id="cardsContainer" class="container">
-      <!-- Carga dinamica de pokemones -->
+      <div id="cardsContainer" class="container">
+       
+        <!-- Carga dinamica de pokemones -->
+      </div>
     </div>
-
-    <script type="module" src="main.js"></script>
+    <script type="module" src="main.js" defer></script>
+    <script type="module" src="pokemon-card.js" defer ></script>
   </body>
 </html>

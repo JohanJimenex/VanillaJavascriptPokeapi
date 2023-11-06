@@ -8,6 +8,9 @@ body {
     rgba(27, 24, 113, 1) 93.2%
   ); /* Fondo degradado oscuro */
   font-family: "Roboto", sans-serif; /* Aplicar la fuente personalizada "Roboto" */
+}
+
+.main-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,4 +71,23 @@ p {
   .box {
     width: 100%;
   }
+}
+.boton-generar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-generar:hover {
+  background-color: #2980b9;
+}
+
+.disable {
+  background-color: #8da7b8;
 }
